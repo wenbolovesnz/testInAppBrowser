@@ -1,8 +1,6 @@
 $(document).ready(function(){
-	console.log('hello');
-
 	setInterval(function(){
 		const steps = localStorage.getItem('steps');
-		console.log('steps:' + steps);
-	},100)
+		$('#steps').html(steps);
+	},1000)
 });
